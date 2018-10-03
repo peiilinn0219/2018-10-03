@@ -26,3 +26,20 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+
+str_c(letters,LETTERS)
+str_c(letters,LETTERS,sep="-")
+str_c("lowercase: ", letters, ", capital: ", LETTERS)
+
+```
+```{r}
+githubData[c(2,3,4),] -> sampleGithub
+str_c(sampleGithub$`GitHub username`,
+      sampleGithub$`GitHub repo name`)
+str_c("https://github.com/",
+      sampleGithub$`GitHub username`,
+      "/",
+      sampleGithub$`GitHub repo name`)
+```
+
